@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>bibliotequeSimplon</display-name>
+  <welcome-file-list>
+  	<!-- <welcome-file>go.jsp</welcome-file>  -->
+ 		 
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ControlServlet</servlet-name>
+    <servlet-class>co.simplon.control.Control</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlServlet</servlet-name>
+    <url-pattern>/control</url-pattern>
+  </servlet-mapping>
+    
+   <servlet>
+    <servlet-name>ControlListerLivres</servlet-name>
+    <servlet-class>co.simplon.control.ControlListerLivres</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlListerLivres</servlet-name>
+    <url-pattern>/controlListerLivres</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ControlListerLivresParTheme</servlet-name>
+    <servlet-class>co.simplon.control.ControlListerLivresParTheme</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlListerLivresParTheme</servlet-name>
+    <url-pattern>/controlListerLivresParTheme</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ConnectionControl</servlet-name>
+    <servlet-class>co.simplon.control.ConnectionControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnectionControl</servlet-name>
+    <url-pattern>/connectionControl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ControlLivre</servlet-name>
+    <servlet-class>co.simplon.control.ControlLivre</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlLivre</servlet-name>
+    <url-pattern>/controlLivre</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControlAjouterLivre</servlet-name>
+    <servlet-class>co.simplon.control.ControlAjouterLivre</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlAjouterLivre</servlet-name>
+    <url-pattern>/controlAjouterLivre</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControlGetLivre</servlet-name>
+    <servlet-class>co.simplon.control.ControlGetLivre</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlGetLivre</servlet-name>
+    <url-pattern>/controlGetLivre</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControlListerLivresModification</servlet-name>
+    <servlet-class>co.simplon.control.ControlListerLivresModification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlListerLivresModification</servlet-name>
+    <url-pattern>/controlListerLivresModification</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControlSupprimmerLivre</servlet-name>
+    <servlet-class>co.simplon.control.ControlSupprimmerLivre</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlSupprimmerLivre</servlet-name>
+    <url-pattern>/controlSupprimmerLivre</url-pattern>
+  </servlet-mapping>
+
+</web-app>
